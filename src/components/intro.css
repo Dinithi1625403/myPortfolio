@@ -1,0 +1,75 @@
+p{
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    margin-top: 20;
+    margin-bottom: 0;
+   
+}
+
+.intro{
+   margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.intro{
+margin: 20px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 787px) {
+
+.intro{
+   margin: 10%;
+   margin-right: 600px;
+}
+
+}
+h2{
+display: inline;
+color: white;
+text-align: left;
+
+margin-top: 0;
+margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+
+}
+@keyframes bottomToTop {
+0% { opacity: 0; transform: translateY(150%); }
+100% { opacity: 1; transform: translateY(0); }
+50% { opacity: 1; transform: translateY(0); }
+}
+
+h3{
+animation: bottomToTop 2s ease-in-out infinite ;
+color: white;
+text-align: left;
+display: inline-table;
+font-size: 200%;
+}
