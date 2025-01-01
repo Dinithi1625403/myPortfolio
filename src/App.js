@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
       <Nav />
       <Intro/>
-        <Background />
+       
         <About />
         
       </header>

@@ -1,7 +1,7 @@
 p{
     color: white;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: medium;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
@@ -9,37 +9,22 @@ p{
 }
 
 h1{
-    color: white;
+    text-shadow: -1px 0 10px rgb(101, 176, 230), -20px 0 20px rgb(85, 85, 226), -30px 0 30px rgb(20, 20, 185), -40px 0 40px #00f, -50px 0 50px #00f,
+                 
+                 10px 0 10px #800080, 20px 0 20px #800080, 30px 0 30px #800080, 40px 0 40px #800080, 50px 0 50px #800080;
     text-align: left;
     font-size: 2rem;
     margin-top: 20;
     margin-bottom: 0;
+    
+
    
 }
 
 .intro{
    margin: 20px;
+   margin-bottom: 300px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.intro{
-margin: 20px;
-}
-
-
-
-
-
 
 @media screen and (min-width: 787px) {
 
@@ -72,4 +57,8 @@ color: white;
 text-align: left;
 display: inline-table;
 font-size: 200%;
+
+text-shadow: -1px 0 10px rgb(101, 176, 230), -20px 0 20px rgb(85, 85, 226), -30px 0 30px rgb(20, 20, 185), -40px 0 40px #00f, -50px 0 50px #00f,
+                 
+10px 0 10px #800080, 20px 0 20px #800080, 30px 0 30px #800080, 40px 0 40px #800080, 50px 0 50px #800080;
 }
