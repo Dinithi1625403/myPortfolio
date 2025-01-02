@@ -1,0 +1,43 @@
+
+
+
+.skills {
+    margin-top: 500px;
+    padding: 20px;
+    color:white;
+    text-align: center;
+}
+
+.sTitle {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+
+.skillName ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+.skillName li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.card {
+    
+    display: table;
+    width: 100%;
+    display: inline-block;
+}
+

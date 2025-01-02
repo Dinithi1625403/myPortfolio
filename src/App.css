@@ -9,7 +9,7 @@ body{
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  
+
    
 }
 *{
@@ -25,4 +25,13 @@ h1{
     font-size: 2rem;
     margin-top: 20;
     margin-bottom: 0;
+}
+/* Add styles for content that will be loaded on scroll */
+.about {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.about.visible {
+    opacity: 1;
 }

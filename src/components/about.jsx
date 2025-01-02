@@ -1,13 +1,5 @@
 import "./about.css";
-window.addEventListener('scroll', function() {
-  var aboutSection = document.querySelector('.about');
-  var position = aboutSection.getBoundingClientRect();
 
-  // checking for partial visibility
-  if(position.top < window.innerHeight && position.bottom >= 0) {
-      aboutSection.style.animation = 'slideInFromLeft 1s ease-out forwards';
-  }
-});
 function About() {
   return (
     
