@@ -3,10 +3,11 @@ function SkillsP(props) {
 return (
     
                     <li>
-                        {props.skill}
+                       
                         <div className="card">
-                            
-                            <img src={props.icon} alt={`${props.skill} icon`} />
+                           <h4> {props.skill}</h4>
+                           
+                          <img src={props.icon} alt={`${props.skill} icon`} />
                         </div>
                     </li>
                 
