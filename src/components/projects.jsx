@@ -4,7 +4,7 @@ function  Projects(props){
         <>
                 <div className="project" >
                     <h2>{props.project}</h2>
-                    <img src={props.image} alt={props.project} />
+                    <img className="projectImg"  src={props.image} alt={props.project} />
 
                 </div>
                 <div className="project-description">
@@ -34,7 +34,7 @@ function ProjectsP(){
                     time="May 2024 - May 2024"
                     description="Developed an intuitive age calculator using HTML, CSS, and JavaScript. This tool allows users to quickly determine their exact age in years, months, and days by simply inputting their date of birth. The project demonstrates proficiency in front-end web development."
                     skill="JavaScript · Cascading Style Sheets (CSS) · HTML"
-                    image="hhttps://media.licdn.com/dms/image/v2/D562DAQGdzU6xwtdsBQ/profile-treasury-image-shrink_160_160/profile-treasury-image-shrink_160_160/0/1719365001561?e=1736690400&v=beta&t=iEt6DLED7jy_nUezr_8PGyxPxWTMiKlz0GfluCv6V50"
+                    image="https://github.com/Dinithi1625403/agecalculator/raw/main/images/Screenshot.png"
                     link="https://github.com/Dinithi1625403/agecalculator"
                     demo="https://dinithi1625403.github.io/agecalculator/"
                 />
@@ -52,7 +52,7 @@ function ProjectsP(){
                     time="Jun 2024 - Jun 2024"
                     description="The Weather Forecast App is designed to provide accurate and real-time weather information. Built using HTML, CSS, Bootstrap, and JavaScript, this app offers a user-friendly interface and reliable data to help users plan their day effectively. Key Features: Current Weather: Get real-time weather updates for your location. Hourly Forecast: Detailed hourly weather forecasts to help you plan your activities. Responsive Design: Seamless experience on any device, thanks to Bootstrap's responsive framework. Interactive Elements: Dynamic weather icons and interactive elements for a more immersive user experience."
                     skill="JavaScript · Bootstrap (Framework) · Cascading Style Sheets (CSS) · HTML5"
-                    image="https://via.placeholder.com/150"
+                    image="https://github.com/Dinithi1625403/weather/raw/main/images/Screenshot.jpg"
                     link="https://github.com/Dinithi1625403/weather"
                     demo="https://dinithi1625403.github.io/weather/"
                 />
