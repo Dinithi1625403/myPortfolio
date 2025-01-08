@@ -18,19 +18,33 @@
     max-height: 400px;
     background-color: white;
     
-
+    z-index: 1;
+}
+.project:hover .project-description {
+    display: flex;
+}
+.project:hover.project-description {
+    display: block;
 }
 
 .project-description {
+    display: block;
+    display: relative;
+    justify-content: center;
+    align-items: center;
+}
+.project-description {
     margin-top: 10px;
     text-align: center;
-    background: linear-gradient(to top, black, rgb(86, 1, 150), rgb(0, 0, 85));
+    background: linear-gradient(to bottom, black, rgb(86, 1, 150), rgb(0, 0, 85));
     opacity: 0.8;
     width: 100%;
     max-width: 500px;
     max-height: 400px;
     color: white;
     padding: 20px;
+    
+    z-index: 2;
 }
 p{
     color:white;
