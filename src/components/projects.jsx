@@ -1,7 +1,7 @@
 import "./projects.css"
 function  Projects(props){
     return(
-        <>      <div className="container">
+        <>      <div className="project-card">
                 <div className="project" >
                     
                     <img className="projectImg"  src={props.image} alt={props.project} />

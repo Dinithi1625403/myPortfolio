@@ -1,14 +1,19 @@
 .project-container{
     display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
 }
-.container{
+.project-card{
+    flex: 1 1 20%;
+    flex-wrap: wrap;
     position: relative;
     max-width: 500px;
-    display: block;
+    display: flex;
     margin: auto;
     margin-top: 40px;
     border: 5px solid #e0e0e0;
     border-radius: 20px;
+    
     
 }
 .project{
@@ -18,7 +23,7 @@
     
    
     border-radius: 20px;
-    width: 100%;
+    
     max-width: 500px;
     height: 300px;
     background-color: white;
@@ -26,7 +31,7 @@
     
 }
 
-.container:hover .project-description {
+.project-card:hover .project-description {
     height: 90%;
     padding:10px;
     margin: auto;
@@ -44,11 +49,11 @@
     transition: .5s ease;
     color: white;
     text-align: center;
-    background: linear-gradient(to bottom, rgb(0,0,0,0.5), rgb(86, 1, 150), rgb(0, 0, 85));
+    background: linear-gradient(to bottom, rgb(0,0,0,0.8), rgb(86, 1, 150), rgb(0, 0, 85));
     
   }
 
-p{  margin-top: 40px;
+p{  
     color:white;
     font-size: 60%;
 
@@ -58,14 +63,16 @@ p{  margin-top: 40px;
 a{
     color:white;
     font-size: 60%;
-    text-decoration: none;
+    
 }
 .projectImg{
     
-   width: 480px;
+   width: 490px;
    height: 100%;
     object-fit: cover;
     background-size: cover;
+    border-radius: 20px;
+    
     
 }
 h2{
@@ -75,4 +82,7 @@ h2{
     -webkit-text-fill-color: transparent;
     margin: auto;
 
+}
+h6{
+    margin: 0;
 }
