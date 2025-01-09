@@ -1,21 +1,22 @@
 import "./projects.css"
 function  Projects(props){
     return(
-        <>
+        <>      <div className="container">
                 <div className="project" >
-                    <h2>{props.project}</h2>
+                    
                     <img className="projectImg"  src={props.image} alt={props.project} />
 
                 </div>
                 <div className="project-description">
                 <h5>{props.project}</h5>
-                <p>{props.time}</p>    
+                <h6>{props.time}</h6>    
                 <p>{props.description}</p>
-                <h6>Skills:{props.skill}</h6>
-                <a className="view" href={props.link}>View project:{props.link}</a>
+                <h6>Skills: {props.skill}</h6>
+                <a className="view" href={props.link}>View project: {props.link}</a>
                 <br/>
-                <a className="demo" href={props.demo}>Demo:{props.demo}</a>
+                <a className="demo" href={props.demo}>Demo: {props.demo}</a>
 
+                </div>
                 </div>
                 </>
                
