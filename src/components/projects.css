@@ -11,9 +11,21 @@
     display: flex;
     margin: auto;
     margin-top: 40px;
-    border: 5px solid #e0e0e0;
+    border: 5px solid;
+    border-image: linear-gradient(to right, blue, purple) 1;
     border-radius: 20px;
+    background:linear-gradient(black,black) padding-box,
+    linear-gradient(to right, blue, purple)
+      border-box;
     
+    
+}
+.project-card:hover{
+    border: 5px solid rgb(179, 207, 227);
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgb(101, 176, 230), 0 0 20px rgb(85, 85, 226), 0 0 30px rgb(20, 20, 185), 0 0 40px #00f, 0 0 50px #00f,
+    0 0 10px #800080, 0 0 20px #800080, 0 0 30px #800080, 0 0 40px #800080, 0 0 50px #800080;
     
 }
 .project{
