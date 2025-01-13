@@ -20,14 +20,14 @@ p{
     
 }
 h1{
-    text-shadow: -1px 0 10px rgb(101, 176, 230), -20px 0 20px rgb(85, 85, 226), -30px 0 30px rgb(20, 20, 185), -40px 0 40px #00f, -50px 0 50px #00f,
-                 
-                 10px 0 10px #800080, 20px 0 20px #800080, 30px 0 30px #800080, 40px 0 40px #800080, 50px 0 50px #800080;
+    background: linear-gradient(to right, #00FFFF, #B200FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 2rem;
     margin-top: 20;
     margin-bottom: 0;
-   
+    
 }
 /* Add styles for content that will be loaded on scroll */
 .about {
@@ -38,3 +38,29 @@ h1{
 .about.visible {
     opacity: 1;
 }
+h2{
+    display: inline;
+    color:aliceblue;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+h3{
+    animation: bottomToTop 2s ease-in-out infinite ;
+    background: linear-gradient(to right, #00FFFF, #B200FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    text-align: left;
+    display: inline-table;
+    font-size: 200%;
+    
+    }
+h4{
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 1px;
+    }
