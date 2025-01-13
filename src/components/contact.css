@@ -39,6 +39,7 @@
     
 }
 input, textarea {
+    color:white;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -51,6 +52,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
+    color: white;
     outline: none;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), /* Darker shadow */
                 0 2px 4px rgba(0, 0, 0, 0.1);  /* Highlighted depth */

@@ -6,19 +6,7 @@
     width: 100vw;
     
 }
-.title{
-    background: linear-gradient(to right, #00FFFF, #B200FF) 1;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-    text-align: center;
-    margin-top: 1cap;
-    margin: 1cap;
-    text-shadow: none;
-    
-   
-   
-}
+
 .description{
     
     margin: 1cap;
