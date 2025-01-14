@@ -8,18 +8,38 @@
     flex: 1 1 20%;
     flex-wrap: wrap;
     position: relative;
-    max-width: 530px;
+    max-width: 528px;
     display: flex;
     margin: auto;
     margin-top: 40px;
     border: 10px solid;
     border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
     border-radius: 25px;
-    background: linear-gradient(black, black) padding-box,
+    background: linear-gradient(white,white) padding-box,
                 linear-gradient(to right, #00FFFF, #B200FF) border-box;
     transition: 0.5s;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    animation: border-animation 5s linear infinite;
+
     
 }
+@keyframes border-animation {
+        0% {
+            border-image-slice: 1 0 0 0;
+        }
+        25% {
+            border-image-slice: 1 1 0 0;
+        }
+        50% {
+            border-image-slice: 1 1 1 0;
+        }
+        75% {
+            border-image-slice: 1 1 1 1;
+        }
+        100% {
+            border-image-slice: 1 0 0 0;
+        }
+    }
 .project-card:hover{
     
     border-radius: 25px;
@@ -63,12 +83,13 @@ background-clip: padding-box;
     transition: .5s ease;
     color: white;
     text-align: center;
-    background: linear-gradient(to bottom, rgb(0,0,0,0.8), rgb(86, 1, 150), rgb(0, 0, 85));
+    background: linear-gradient(to bottom, rgb(0,0,0,0.6), rgb(86, 1, 150), rgb(0, 0, 85));
     
   }
 
-p{  
+.project-description p{  
     color:white;
+    font-size: 0.6rem;
     
 
 
@@ -81,11 +102,11 @@ a{
 }
 .projectImg{
     
-   width: 490px;
+   width: 488px;
    height: 100%;
     object-fit: cover;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 10px;
     
     
 }
