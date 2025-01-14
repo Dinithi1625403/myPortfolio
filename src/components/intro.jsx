@@ -22,7 +22,8 @@ export default function Intro() {
                 <h3>{texts[index]} </h3>
             </span>
             <br />
-            <button>Hire me</button>
+            <a className='btn'>Hire me</a>
+            <a className='viewMore'>View more</a>
         </div>
     );
 }

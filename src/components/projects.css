@@ -19,27 +19,11 @@
                 linear-gradient(to right, #00FFFF, #B200FF) border-box;
     transition: 0.5s;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    animation: border-animation 5s linear infinite;
+    
 
     
 }
-@keyframes border-animation {
-        0% {
-            border-image-slice: 1 0 0 0;
-        }
-        25% {
-            border-image-slice: 1 1 0 0;
-        }
-        50% {
-            border-image-slice: 1 1 1 0;
-        }
-        75% {
-            border-image-slice: 1 1 1 1;
-        }
-        100% {
-            border-image-slice: 1 0 0 0;
-        }
-    }
+
 .project-card:hover{
     
     border-radius: 25px;

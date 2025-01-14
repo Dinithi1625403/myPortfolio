@@ -41,8 +41,7 @@ p{
 50% { opacity: 1; transform: translateY(0); }
 }
 
-
-button{
+.btn {
     background: linear-gradient(to right, #00FFFF, #B200FF);
     border: none;
     color: rgb(0, 0, 0);
@@ -53,17 +52,70 @@ button{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 12px;
-   
+    opacity: 0.9;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
     transition-duration: 0.4s;
+    position: relative;
+    overflow: hidden;
+
+    
 }
-button:hover{
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.viewMore:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+.viewMore {
+    opacity: 0.9;
+    text-decoration: none;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.viewMore::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(to right, #00FFFF, #B200FF);
-    
-    
-    box-shadow: 0 0 10px #00FFFF, 0 0 20px #B200FF;
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+    transform-origin: left;
 }
+
+.viewMore:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+.btn:hover::before{
+    transform: scaleX(1);
+}
+    
