@@ -19,7 +19,7 @@ li{
 }
 
 
-a{
+.nav{
     text-decoration: none;
     border: 5px solid transparent;
     
@@ -30,7 +30,7 @@ a{
      overflow: hidden;
  }
  
- a::before {
+ .nav::before {
      content: '';
      position: absolute;
      top: 0;
@@ -48,7 +48,7 @@ a{
      border-left: none;
  }
  
- a:hover::before {
+ .nav:hover::before {
      transform: scaleX(1);
      border-top: none;
      border-right: none;

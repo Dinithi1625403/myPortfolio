@@ -56,7 +56,7 @@ p{
 
   /* Initial styles for .btn (colorized) */
   .btn {
-   border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
+   
     color: black;
     opacity: 0.9;
     border:5px solid ;
