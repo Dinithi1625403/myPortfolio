@@ -28,8 +28,7 @@
     
     border-radius: 25px;
     transition: 0.5s;
-    box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF,
-                0 0 10px #B200FF, 0 0 20px #B200FF, 0 0 30px #B200FF, 0 0 40px #B200FF, 0 0 50px #B200FF;
+    
     
 }
 .project{

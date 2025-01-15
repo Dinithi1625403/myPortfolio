@@ -41,61 +41,47 @@ p{
 50% { opacity: 1; transform: translateY(0); }
 }
 
-.btn {
-    background: linear-gradient(to right, #00FFFF, #B200FF);
-    border: none;
-    color: rgb(0, 0, 0);
+  /* Default styling for the buttons */
+  .btn, .viewMore {
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    
     cursor: pointer;
-    opacity: 0.9;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    transition-duration: 0.4s;
     position: relative;
     overflow: hidden;
+    transition: all 0.4s ease;
+    margin: 10px;
+   
+  }
 
-    
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    z-index: -1;
-    transition: transform 0.5s ease;
-    transform: scaleX(0);
-    transform-origin: right;
-}
-
-.viewMore:hover::before{
-    transform: scaleX(1);
-}
-
-
-
-.viewMore {
+  /* Initial styles for .btn (colorized) */
+  .btn {
+   border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
+    color: black;
     opacity: 0.9;
+    border:5px solid ;
+    margin: auto;
+    border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
+    position: relative;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+  /* Initial styles for .viewMore (transparent) */
+  .viewMore {
+    opacity: 0.9;
+    background: transparent;
     text-decoration: none;
     border: 5px solid transparent;
     border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
-    border-radius: 20px;
-    padding: 10px 20px;
+   
+    
     position: relative;
     overflow: hidden;
-}
+  }
 
-.viewMore::before {
+  /* .viewMore before pseudo-element */
+  .viewMore::before {
     content: '';
     position: absolute;
     top: 0;
@@ -107,15 +93,66 @@ p{
     transition: transform 0.5s ease;
     transform: scaleX(0);
     transform-origin: left;
-}
+  }
 
-.viewMore:hover::before {
+  /* Trigger the animation for .viewMore on hover */
+  .viewMore:hover::before {
     transform: scaleX(1);
-}
+  }
 
-
-
-.btn:hover::before{
-    transform: scaleX(1);
-}
+  /* Make .btn background transparent when .viewMore is hovered */
+  .viewMore:hover ~ .btn::before {
+    transform: scaleX(0);  /* Make the background disappear */
+    transform-origin: left;  /* Make it disappear from right to left */
+    /* Set the background to transparent */
     
+    background: linear-gradient(to right, #00FFFF, #B200FF);
+   
+    
+  
+   
+    
+  }
+
+  /* When .viewMore is not hovered, the .btn background returns */
+  .viewMore:not(:hover) ~ .btn::before {
+    transform: scaleX(1);  /* Return the background */
+    transform-origin: left;  /* Start from the left */
+    background: linear-gradient(to right, #00FFFF, #B200FF);  /* Restore the gradient */
+  }
+
+  /* .btn before pseudo-element to hold the background gradient */
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #00FFFF, #B200FF);
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform: scaleX(1); /* Initially visible */
+    transform-origin: right;
+  }
+  .viewMore:hover ~.btn:hover{
+    background: linear-gradient(to right, #00FFFF, #B200FF);
+    color:black ;
+    opacity: 1;
+  }
+
+  .viewMore:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px 5px rgba(0, 255, 255, 0.5), 0 0 15px 5px rgba(178, 0, 255, 0.5);
+  color: black;
+}
+.btn:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px 5px rgba(0, 255, 255, 0.5), 0 0 15px 5px rgba(178, 0, 255, 0.5);
+  color: black;
+}
+.viewMore:hover ~ .btn{
+    color: white;
+ 
+}
+
