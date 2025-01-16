@@ -104,3 +104,22 @@ input:focus, textarea:focus {
         margin-bottom: 20px;
     }
 }
+.send{
+    background: linear-gradient(to right, #00FFFF, #B200FF);
+    border: 5px solid ;
+    border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    margin: 10px;
+    margin-left: 20px;
+    
+    
+}
+.send:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px 5px rgba(0, 255, 255, 0.5), 0 0 15px 5px rgba(178, 0, 255, 0.5);
+}
