@@ -28,6 +28,7 @@ li{
      padding: 10px 20px;
      position: relative;
      overflow: hidden;
+     font-size: 0.8em;
  }
  
  .navLi::before {
