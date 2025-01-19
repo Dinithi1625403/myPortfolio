@@ -1,7 +1,7 @@
 .project-container{
     display: flex;
     flex-wrap: wrap;
-    background-color: blueviolet;
+    
 }
 .project-card{
     
@@ -60,9 +60,9 @@ background-clip: padding-box;
     left: 0;
     right: 0;
     overflow: hidden;
-    max-width: 500px;
-    height: 0;
-    border-radius: 20px;
+    max-width: 600px;
+    height: 0%;
+    border-radius: 10px;
     transition: .5s ease;
     color: white;
     text-align: center;
