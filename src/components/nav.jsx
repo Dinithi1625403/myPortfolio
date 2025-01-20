@@ -5,6 +5,8 @@ export default function Nav(){
             <ul>
                 <li><a className='navLi' href="#">Home</a></li>
                 <li><a className='navLi'   href="#">About</a></li>
+                <li><a className='navLi'   href="#">Skills</a></li>
+                <li><a className='navLi'   href="#">projects</a></li>
                 <li><a className='navLi' href="#">Contact</a></li>
             </ul>
         </nav>
