@@ -23,10 +23,13 @@
 
 .about{
     float: left;
-    width: 50%;
+    width: 40%;
     margin: 20px;
     animation: slideInFromLeft 1s ease-out forwards;
     position: sticky;
+    background: rgba(59, 56, 56, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 @keyframes slideInFromLeft {
     0% {
