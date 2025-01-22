@@ -1,17 +1,17 @@
 .project-container{
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
 }
+
 .project-card{
-    
-    flex: 1 1 20%;
+    flex: 1 1 calc(50% - 20px);
     flex-wrap: wrap;
     position: relative;
     max-width: 528px;
     display: flex;
-    margin: auto;
-    margin-top: 40px;
+    margin:  auto;
+    margin-bottom: 20px;
     border: 10px solid;
     border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
     border-radius: 25px;
@@ -19,9 +19,12 @@
                 linear-gradient(to right, #00FFFF, #B200FF) border-box;
     transition: 0.5s;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    
+}
 
-    
+@media (min-width: 1024px) {
+    .project-card {
+        flex: 1 1 calc(50% - 20px);
+    }
 }
 
 .project-card:hover{
