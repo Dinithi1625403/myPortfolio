@@ -14,7 +14,7 @@ export default function Intro() {
     }, []);
 
     return (
-        <div className="intro" style={{ textAlign: 'left' }}>
+        <div id='home' className="intro" style={{ textAlign: 'left' }}>
             <h1 className='name'>👋 Hi! It's Dinithi Dewmini</h1>
             <p>An IT undergraduate passionate about crafting user-friendly web applications. I specialize in front-end development, innovative designs, and creating seamless digital experiences.</p>
             <span>

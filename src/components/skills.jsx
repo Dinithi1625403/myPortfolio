@@ -20,7 +20,7 @@ function Skills() {
    
     return (
        <>
-       <div>
+       <div id="skills">
        
       <div className="skills">
       <h1 className="sTitle">Skills 🏆</h1>

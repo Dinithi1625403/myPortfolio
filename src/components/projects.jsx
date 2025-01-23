@@ -1,7 +1,7 @@
 import "./projects.css"
 function  Projects(props){
     return(
-        <>      <div className="project-card">
+        <>      <div  className="project-card">
                 <div className="project" >
                     
                     <img className="projectImg"  src={props.image} alt={props.project} />
@@ -27,7 +27,7 @@ function  Projects(props){
 }
 function ProjectsP(){
     return(
-        <div>
+        <div id="projects">
             <h1>Projects 🚀</h1>
             <div className="projects-container">
                 <Projects
