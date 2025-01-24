@@ -35,7 +35,7 @@
 }
 
 .skillName li {
-    flex: 1 1 20%; /* Adjust the percentage to control the number of items per row */
+    flex: 1 1 10%; /* Adjust the percentage to control the number of items per row */
     margin-bottom: 5px;
     list-style: none;
 }
