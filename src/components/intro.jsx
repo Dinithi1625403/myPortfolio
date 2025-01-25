@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './intro.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 const texts = ["Developer", "Designer", "Creator", "Innovator"];
 
 export default function Intro() {
@@ -25,6 +26,11 @@ export default function Intro() {
             
             <a className='viewMore'>View more</a>
             <a className='btn'>Hire me</a>
+            <div>
+                <div className='media'><a href='https://github.com/Dinithi1625403'><i className='fab fa-github icon'></i></a></div>
+                <div className='media'><a href='https://www.linkedin.com/in/dinithi-dewmini-30280327b/'><i className='fab fa-linkedin icon'></i></a></div>
+                
+            </div>
         </div>
     );
 }

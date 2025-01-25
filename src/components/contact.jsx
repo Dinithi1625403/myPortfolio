@@ -10,7 +10,7 @@ export default function Contact() {
       <p>Got a question, a project idea, or just want to say hi? I’d love to hear from you. Fill out the form below, or reach out to me directly via email or social media! 📧</p>
       
       </div>
-    </div>
+    
     <div className="contact-form">
         <form>
             <input type="text" placeholder="Name 📝" />
@@ -18,6 +18,7 @@ export default function Contact() {
             <textarea placeholder="Message 💬"></textarea>
             <button className="send">Send </button>
         </form>
+    </div>
     </div>
     </>
   );
