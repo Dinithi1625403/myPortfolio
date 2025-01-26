@@ -29,7 +29,7 @@ export default function Intro() {
             <div>
                 <div className='media'><a href='https://github.com/Dinithi1625403'><i className='fab fa-github icon'></i></a></div>
                 <div className='media'><a href='https://www.linkedin.com/in/dinithi-dewmini-30280327b/'><i className='fab fa-linkedin icon'></i></a></div>
-                
+                <div className='media'><a href='https://twitter.com/DinithiDewmini'><i className='fab fa-x-twitter icon'></i></a></div>
             </div>
         </div>
     );
