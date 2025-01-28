@@ -9,13 +9,13 @@
 .project-card{
     flex: 1 1 50%;
     flex-wrap: wrap;
-    
+    position: relative;
     width: fit-content;
     display: flex;
     margin:  auto;
     margin-bottom: 20px;
     border: 10px solid;
-    border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
+    
     border-radius: 25px;
     background: linear-gradient(white,white) padding-box,
                 linear-gradient(to right, #00FFFF, #B200FF) border-box;
@@ -41,8 +41,8 @@
     flex-direction: column;
     align-items: center;
     border-radius: 25px;
-border: 10px solid transparent;
-background-clip: padding-box;
+    border: 10px solid transparent;
+    background-clip: padding-box;
    
     border-radius: 20px;
     
@@ -54,7 +54,7 @@ background-clip: padding-box;
 }
 
 .project-card:hover .project-description {
-    height: 90%;
+    height: 100%;
     padding:10px;
     margin: auto;
 }
@@ -71,7 +71,7 @@ background-clip: padding-box;
     transition: .5s ease;
     color: white;
     text-align: center;
-    background: linear-gradient(to bottom, rgb(0,0,0,0.6), rgb(86, 1, 150), rgb(0, 0, 85));
+    background: linear-gradient(to top, #00FFFF, #B200FF, rgb(0, 0, 85,0.6),rgb(0,0,0,0.3));
     
   }
 
@@ -95,7 +95,7 @@ a{
     object-fit: cover;
     background-size: cover;
     border-radius: 10px;
-    
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     
 }
 
