@@ -5,17 +5,22 @@ nav{
     padding: 1rem 2rem;
     
     
+    
 }
 ul{
     display: flex;
     list-style: none;
-    margin-left: auto;
+    
     
     
 }
 li{
-    margin-right: 1rem;
+    margin: 10px;
+    
+   
     cursor: pointer;
+    
+    
    
 }
 
@@ -26,7 +31,7 @@ li{
     
      border-radius: 10px;
      
-     padding: 10px 20px;
+     padding-bottom: 10px;
      position: relative;
      overflow: hidden;
      font-size: 0.8em;
@@ -56,6 +61,25 @@ li{
      border-right: none;
      border-left: none;
  }
- 
+ .navName1{
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background: linear-gradient(to right,white, #00FFFF, #B200FF);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: 200%;
+   display: inline;
+   
+  
+ }
+ .navName2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    font-size: 180%;
+    margin-left: 0;
+    
+    display: inline-table;
+    
+ }
     
 
