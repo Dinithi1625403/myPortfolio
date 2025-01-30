@@ -8,6 +8,7 @@ function  Projects(props){
 
                 </div>
                 <div className="project-description">
+                <div className="project-info">
                 <h5>{props.project}</h5>
                 <h6>{props.time}</h6>    
                 <p>{props.description}</p>
@@ -15,7 +16,7 @@ function  Projects(props){
                 <a className="view" href={props.link}>View project: {props.link}</a>
                 <br/>
                 <a className="demo" href={props.demo}>Demo: {props.demo}</a>
-
+                </div>
                 </div>
                 </div>
                 </>
