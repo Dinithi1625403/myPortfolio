@@ -18,22 +18,27 @@ export default function Nav(){
         var x = document.getElementById("navUl");
         x.style.display="block";
         z.style.display="none";
-        x.style.backgroundColor ="rgba(41, 40, 40)";
+        
         x.style.width = "50%";
         
         for (var i = 0; i < y.length; i++) {
-            y[i].style.width = "100vw";
+            y[i].style.width = "100%";
             y[i].style.display = "block";
             y[i].addEventListener('mouseover', function() {
-                this.style.backgroundColor = 'gray';
+                this.style.backgroundImage = 'linear-gradient(to right,rgb(0, 255, 255,0.5),rgb(178, 0, 255,0.5))';
+                
             });
             y[i].addEventListener('mouseout', function() {
-                this.style.backgroundColor = 'rgba(41, 40, 40)';
+                this.style.backgroundImage = 'none';
+                this.style.backgroundColor = 'rgb(32, 32, 32)';
             });
             y[i].style.height = "40px";
-           
+            y[i].style.backgroundColor ="rgb(32, 32, 32)";
             y[i].style.margin = "0px";
-            y[i].style.padding = "0";
+            y[i].style.padding = "10px 60px";
+            y[i].style.borderRadius = "0";
+    
+            
             
         }
     }

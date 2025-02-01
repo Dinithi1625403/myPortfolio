@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <Nav />
+      <hr/>
       <Intro/>
       <About />
       <Skills/>
