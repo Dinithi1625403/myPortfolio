@@ -1,8 +1,12 @@
 nav{
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    top: 0;
+    background-color: black;
+    z-index: 100;
     
     
     
