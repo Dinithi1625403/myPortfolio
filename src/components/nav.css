@@ -8,6 +8,7 @@ nav{
     
 }
 ul{
+    display: block;
     display: flex;
     list-style: none;
     
@@ -15,7 +16,7 @@ ul{
     
 }
 li{
-    margin: 10px;
+   
     
    
     cursor: pointer;
@@ -82,12 +83,13 @@ li{
     
  }
 
- .navIcon{
+.navIcon {
+    display: none;
     font-size: 1.5em;
     color: aliceblue;
     margin-left: 0;
-    display: inline-table;
- }
+}
+
 @media (max-width: 768px) {
     .navIcon {
         display: block;
@@ -97,4 +99,13 @@ li{
         display: none;
     }
 }
+
+@media (min-width: 769px) {
+    .navIcon {
+        display: none;
+    }
+
+    
+}
+
 
