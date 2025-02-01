@@ -18,8 +18,11 @@ export default function Nav(){
         var x = document.getElementById("navUl");
         x.style.display="block";
         z.style.display="none";
-        
+        x.style.zIndex = "1";
         x.style.width = "50%";
+        x.style.position = "absolute";
+        x.style.top = "0";
+        x.style.right = "10px";
         
         for (var i = 0; i < y.length; i++) {
             y[i].style.width = "100%";
@@ -37,7 +40,7 @@ export default function Nav(){
             y[i].style.margin = "0px";
             y[i].style.padding = "10px 60px";
             y[i].style.borderRadius = "0";
-    
+           
             
             
         }
