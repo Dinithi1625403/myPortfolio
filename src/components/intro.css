@@ -23,8 +23,12 @@ p{
 }
 
 .intro{
+  margin: 0cap;
+  width:100vh;
+  height: fit-content;
    margin: 20px;
    margin-bottom: 300px;
+   
 }
 
 @media screen and (min-width: 787px) {

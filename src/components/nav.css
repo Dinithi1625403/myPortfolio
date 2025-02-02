@@ -5,7 +5,7 @@ nav{
     align-items: center;
     padding: 1rem 2rem;
     top: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
     
     
