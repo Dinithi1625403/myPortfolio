@@ -17,6 +17,13 @@ background-size: cover;
 
 
 
+
+}
+@media (max-width: 500px) {
+    body{
+        background-size: fixed;
+    }
+    
 }
 
 

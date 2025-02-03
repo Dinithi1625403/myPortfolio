@@ -15,7 +15,8 @@ export default function Intro() {
     }, []);
 
     return (
-        <div id='home' className="intro" style={{ textAlign: 'left' }}>
+        <div id='home' className="intro-container" style={{ textAlign: 'left' }}>
+            <div className='intro'>
             <p className='name'>👋 Hi! It's Dinithi Dewmini</p>
             <p>An IT undergraduate passionate about crafting user-friendly web applications. I specialize in front-end development, innovative designs, and creating seamless digital experiences.</p>
             <span>
@@ -30,6 +31,10 @@ export default function Intro() {
                 <div className='media'><a href='https://github.com/Dinithi1625403'><i className='fab fa-github icon'></i></a></div>
                 <div className='media'><a href='https://www.linkedin.com/in/dinithi-dewmini-30280327b/'><i className='fab fa-linkedin icon'></i></a></div>
                 <div className='media'><a href='https://twitter.com/DinithiDewmini'><i className='fab fa-x-twitter icon'></i></a></div>
+            </div>
+            </div>
+            <div className='introImg'>
+                <div className='circle'></div>
             </div>
         </div>
     );
