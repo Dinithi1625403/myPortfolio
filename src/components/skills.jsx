@@ -5,9 +5,9 @@ return (
                     <li>
                        
                         <div className="card">
-                           <h4> {props.skill}</h4>
+                           <h4 className="skillTitle"> {props.skill}</h4>
                            
-                          <img src={props.icon} alt={`${props.skill} icon`} />
+                          <img className="skillIcon" src={props.icon} alt={`${props.skill} icon`} />
                         </div>
                     </li>
                 
