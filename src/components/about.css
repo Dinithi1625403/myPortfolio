@@ -27,22 +27,35 @@
   font-weight: 300;
   font-style: normal;
   height: fit-content;
+line-height: 1.6;
+text-align: justify;
+padding: 10px;
+
     
 
 
 
 }
+
 
 .about{
-    float: left;
-    width: 40%;
-    margin: 20px;
+    
+    width: 80%;
+    margin: auto;
     animation: slideInFromLeft 1s ease-out forwards;
-    
-    
-   
- 
+
 }
+@media screen and (min-width: 787px){
+    
+    .about{
+        width: 40%;
+        float: left;
+        margin: 20px;
+    }
+    
+}
+
+
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
