@@ -34,7 +34,7 @@ function ProjectsP(){
                 <Projects
                     project="Age-calculator 🎂"
                     time="May 2024 - May 2024"
-                    description="Developed an intuitive age calculator using HTML, CSS, and JavaScript. This tool allows users to quickly determine their exact age in years, months, and days by simply inputting their date of birth. The project demonstrates proficiency in front-end web development."
+                    description="An intuitive age calculator using HTML, CSS, and JavaScript to determine exact age in years, months, and days."
                     skill="JavaScript · Cascading Style Sheets (CSS) · HTML"
                     image="https://github.com/Dinithi1625403/agecalculator/raw/main/images/Screenshot.png"
                     link="https://github.com/Dinithi1625403/agecalculator"
@@ -43,7 +43,7 @@ function ProjectsP(){
                 <Projects
                     project="BMI-calculator 🏋️"
                     time="May 2024 - May 2024"
-                    description="A simple and intuitive BMI (Body Mass Index) calculator built with HTML, CSS, and JavaScript. This tool helps users quickly determine their BMI based on height and weight inputs, providing insights into their health status. Perfect for anyone looking to monitor their fitness and well-being."
+                    description="A simple BMI calculator built with HTML, CSS, and JavaScript to determine BMI based on height and weight."
                     skill="JavaScript · Cascading Style Sheets (CSS) · HTML"
                     image="https://github.com/Dinithi1625403/BMI-Calculator/raw/main/images/Screenshot.png"
                     link="https://github.com/Dinithi1625403/BMI-Calculator"
@@ -52,7 +52,7 @@ function ProjectsP(){
                 <Projects
                     project="Weather-app ☀️"
                     time="Jun 2024 - Jun 2024"
-                    description="The Weather Forecast App is designed to provide accurate and real-time weather information. Built using HTML, CSS, Bootstrap, and JavaScript, this app offers a user-friendly interface and reliable data to help users plan their day effectively. Key Features: Current Weather: Get real-time weather updates for your location. Hourly Forecast: Detailed hourly weather forecasts to help you plan your activities. Responsive Design: Seamless experience on any device, thanks to Bootstrap's responsive framework. Interactive Elements: Dynamic weather icons and interactive elements for a more immersive user experience."
+                    description="A weather app providing real-time weather updates, hourly forecasts, and a responsive design using HTML, CSS, Bootstrap, and JavaScript."
                     skill="JavaScript · Bootstrap (Framework) · Cascading Style Sheets (CSS) · HTML5"
                     image="https://github.com/Dinithi1625403/weather/raw/main/images/Screenshot.jpg"
                     link="https://github.com/Dinithi1625403/weather"
@@ -61,7 +61,7 @@ function ProjectsP(){
                 <Projects
                     project="To-do-list 📝"
                     time="Jun 2024 - Jul 2024"
-                    description="Developed a feature-rich To-Do List application using HTML, CSS, and JavaScript. The application allows users to categorize tasks into four distinct categories: important and urgent, not important but urgent, important but not urgent, and not important and not urgent. Each task is displayed in the appropriate category based on the user's selection via radio buttons. Designed with a user-friendly interface, including a cute and engaging font style to enhance user experience. Key Features: Categorization of tasks for better organization and prioritization. User-friendly interface with a visually appealing design. Efficient use of HTML, CSS, Bootstrap, and JavaScript to create a responsive application."
+                    description="A feature-rich To-Do List application using HTML, CSS, and JavaScript, allowing task categorization and a user-friendly interface."
                     skill="JavaScript · Bootstrap (Framework) · Cascading Style Sheets (CSS) · HTML"
                     image="https://github.com/Dinithi1625403/To-do-list/raw/main/images/welcome.png"
                     link="https://github.com/Dinithi1625403/To-do-list"
@@ -70,7 +70,7 @@ function ProjectsP(){
                 <Projects
                     project="Image-Gallery 🖼️"
                     time="Dec 2024 - Dec 2024"
-                    description="Developed an interactive web application that allows users to seamlessly view, organize, and manage their image collections. Key features of the gallery include: Lightbox View: Enables users to view images in a pop-up overlay without leaving the page. Hover Effects: Adds dynamic animations and visual effects for an enhanced user experience. Captions/Descriptions: Displays contextual captions below each image for additional information. Grid Layout: A clean and organized grid format for effortless browsing. Technologies Used: HTML, CSS, JavaScript for front-end development. Canva for designing and optimizing images. This project was created to provide users with an intuitive, visually appealing, and efficient tool for managing image collections."
+                    description="An interactive web application for viewing, organizing, and managing image collections with features like lightbox view and hover effects."
                     skill="HTML · Cascading Style Sheets (CSS) · JavaScript · Canva"
                     image="https://github.com/Dinithi1625403/imageGallery/raw/main/Screenshot.png"
                     link="https://github.com/Dinithi1625403/imageGallery"
@@ -79,6 +79,5 @@ function ProjectsP(){
             </div>
         </div>
     )
-
 }
 export default ProjectsP;

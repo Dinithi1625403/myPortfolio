@@ -3,6 +3,16 @@
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.6); /* Corrected background-color syntax */
     margin: auto;
+    margin-top: 100px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+    /* 2. shadow ring 👇 */
+    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+    /* 3. multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+   
 }
 
 .projects-container {
@@ -21,7 +31,7 @@
     width: fit-content;
     display: flex;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     padding: 10px;
     /* Add bottom margin */
     border-radius: 25px;
@@ -34,7 +44,7 @@
     .project-card {
         flex: 1 1 calc(50% - 20px);
         margin: auto;
-        margin-bottom: 60px;
+        margin-bottom: 10px;
         
         
     }
@@ -51,11 +61,11 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px; /* Removed duplicate border-radius */
-    border: 10px solid transparent;
+    border: 4px solid transparent;
     background-clip: padding-box;
-    max-width: 400px;
-    height: 300px;
-    background-color: white;
+    max-width: 430px;
+    height: 250px;
+    
     text-align: center;
 }
 
