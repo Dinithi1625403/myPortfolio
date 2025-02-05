@@ -110,6 +110,7 @@ a {
 }
 
 h6 {
+    display: none;
     margin: 0;
 }
 

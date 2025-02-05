@@ -1,28 +1,28 @@
 import "./projects.css"
 function  Projects(props){
     return(
-        <>      <div  className="project-card">
-                <div className="project" >
-                    
-                    <img className="projectImg"  src={props.image} alt={props.project} />
-
+        <>      
+            <div className="project-card">
+                <div className="project">
+                    <img className="projectImg" src={props.image} alt={props.project} />
                 </div>
                 <div className="project-description">
-                <div className="project-info">
-                <h5>{props.project}</h5>
-                <h6>{props.time}</h6>    
-                <p>{props.description}</p>
-                <h6>Skills: {props.skill}</h6>
-                <a className="view" href={props.link}>View project: {props.link}</a>
-                <br/>
-                <a className="demo" href={props.demo}>Demo: {props.demo}</a>
+                    <div className="project-info">
+                        <h5>{props.project}</h5>
+                        <h6>{props.time}</h6>    
+                        <p>{props.description}</p>
+                        <h6>Skills: {props.skill}</h6>
+                        <a className="view" href={props.link}>
+                            <i className="fab fa-github"></i> View project
+                        </a>
+                        <br/>
+                        <a className="demo" href={props.demo}>
+                            <i className="fas fa-play-circle"></i> Demo
+                        </a>
+                    </div>
                 </div>
-                </div>
-                </div>
-                </>
-               
-        
-    
+            </div>
+        </>
     )
 
 }
