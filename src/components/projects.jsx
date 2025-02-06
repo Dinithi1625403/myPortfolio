@@ -4,7 +4,7 @@ function  Projects(props){
         <>      
             <div className="project-card">
                 <div className="project">
-                    <img className="projectImg" src={props.image} alt={props.project} />
+                    <img className="projectImg" src={props.image} alt={props.project} title={props.project} />
                 </div>
                 <div className="project-description">
                     <div className="project-info">
@@ -12,13 +12,16 @@ function  Projects(props){
                         <h6>{props.time}</h6>    
                         <p>{props.description}</p>
                         <h6>Skills: {props.skill}</h6>
+                        <div className="project-links">
                         <a className="view" href={props.link}>
-                            <i className="fab fa-github"></i> View project
+                            <i className="fab fa-github" alt="View project" title="View project"></i> 
                         </a>
                         <br/>
+
                         <a className="demo" href={props.demo}>
-                            <i className="fas fa-play-circle"></i> Demo
+                            <i className="fas fa-play-circle" title="Demo"></i>
                         </a>
+                        </div>
                     </div>
                 </div>
             </div>
