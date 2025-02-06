@@ -14,9 +14,9 @@ function  Projects(props){
                         <h6>Skills: {props.skill}</h6>
                         <div className="project-links">
                         <a className="view" href={props.link}>
-                            <i className="fab fa-github" alt="View project" title="View project"></i> 
+                            <i className="fa-brands fa-github"  title="View project"></i> 
                         </a>
-                        <br/>
+                        
 
                         <a className="demo" href={props.demo}>
                             <i className="fas fa-play-circle" title="Demo"></i>
