@@ -20,8 +20,7 @@
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 20px; /* Add gap between grid items */
-   
+    
     cursor: default;
 }
 
@@ -38,15 +37,24 @@
     background-color: white;
     transition: 0.5s;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+}
+@media (max-width: 767px) {
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }}
+
+@media (min-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (min-width: 768px) {
     .project-card {
-        flex: 1 1 calc(50% - 20px);
-        margin: auto;
-        margin-bottom: 10px;
+        flex: 1 1 20%;
         
-        
+        margin-bottom: 10px; 
     }
   
 }
