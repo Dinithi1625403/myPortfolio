@@ -42,7 +42,7 @@ padding: 10px;
     
     width: 80%;
     margin: auto;
-    animation: slideInFromLeft 1s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
 
 }
 @media screen and (min-width: 787px){

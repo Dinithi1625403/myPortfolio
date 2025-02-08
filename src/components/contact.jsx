@@ -1,5 +1,22 @@
 import "./contact.css";
+import { useEffect } from "react";
 export default function Contact() {
+  useEffect(() => {
+    const handleScroll = () => {
+      var aboutSection = document.querySelector('.contact-container');
+      var position = aboutSection.getBoundingClientRect();
+  
+      // Checking if the element is in the viewport
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
     <div id="contact" className="contact-container">

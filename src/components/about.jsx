@@ -1,6 +1,24 @@
 import "./about.css";
+import { useEffect } from "react";
 
 function About() {
+useEffect(() => {
+  const handleScroll = () => {
+    var aboutSection = document.querySelector('.container');
+    var position = aboutSection.getBoundingClientRect();
+
+    // Checking if the element is in the viewport
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+      aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
+    
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
   return (
     <div id="about" className="container">
       <h1>About me✏️</h1>

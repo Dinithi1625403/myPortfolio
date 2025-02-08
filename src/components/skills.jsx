@@ -1,5 +1,29 @@
 import "./skills.css";
+import { useEffect } from "react";
 function SkillsP(props) {
+  useEffect(() => {
+    const handleScroll = () => {
+      var aboutSection = document.querySelector('.skills');
+      var cards = document.querySelectorAll('.card');
+      cards.forEach((card) => {
+        var position = card.getBoundingClientRect();
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+          card.style.animation = 'fadeIn 2s ease-out forwards';
+        }
+      });
+      var position = aboutSection.getBoundingClientRect();
+  
+      // Checking if the element is in the viewport
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 return (
     
                     <li>
