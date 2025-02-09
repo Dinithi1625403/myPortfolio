@@ -3,13 +3,13 @@ import { useEffect } from "react";
 export default function Contact() {
   useEffect(() => {
     const handleScroll = () => {
-      var aboutSection = document.querySelector('.contact-container');
-      var position = aboutSection.getBoundingClientRect();
-  
-      // Checking if the element is in the viewport
+      const elements = document.querySelectorAll('.contact-container,.contact-card, input, textarea, .send');
+      elements.forEach(element => {
+      const position = element.getBoundingClientRect();
       if (position.top < window.innerHeight && position.bottom >= 0) {
-        aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
+        element.style.animation = 'fadeIn 2s ease-out forwards';
       }
+      });
     };
   
     window.addEventListener('scroll', handleScroll);
