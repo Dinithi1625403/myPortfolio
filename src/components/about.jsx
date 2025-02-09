@@ -1,5 +1,7 @@
 import "./about.css";
 import { useEffect } from "react";
+import Education from "./about/education";
+import Achivements from "./about/achivements";
 
 function About() {
 useEffect(() => {
@@ -26,6 +28,16 @@ useEffect(() => {
         <p className="description">
           &nbsp;&nbsp;&nbsp;&nbsp;I’m a web developer who loves creating simple, user-friendly websites and applications. I’m currently studying for a BSc (Hons) in IT and always enjoy learning new skills, like React, to improve my work. I have a diploma in English Language and Literature, which helps me communicate and share ideas effectively. When I’m not coding, I spend time with my family and enjoy exploring new ways to grow and learn. I’m always excited to take on new challenges and create something meaningful. Let’s connect and make something great together!
         </p>
+      </div>
+      <div className="aboutTab">
+        <button className="tab"   onClick={aboutSection(event,'education')}>Education</button>
+        <button className="tab"  onClick={aboutSection(event,'achivements')}>achivements</button>
+      </div>
+      <div id="education" className="tabContent">
+        <Education />
+      </div>
+      <div id="achivements" className="tabContent">
+        <Achivements />
       </div>
     </div>
   );
