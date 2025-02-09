@@ -81,7 +81,7 @@
     background: url(https://i.ibb.co/HqTb82B/Untitled-design-3.png);
     
     background-repeat: repeat-x;
-    
+    animation: filling 10s ease-in-out infinite;
     
 }
 
