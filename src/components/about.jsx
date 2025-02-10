@@ -21,6 +21,19 @@ useEffect(() => {
     window.removeEventListener('scroll', handleScroll);
   };
 }, []);
+  function aboutSection(event,tabName) {
+    var i, tabContent, tab;
+    tabContent = document.getElementsByClassName("tabContent");
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+    tab = document.getElementsByClassName("tab");
+    for (i = 0; i < tab.length; i++) {
+      tab[i].className = tab[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.className += " active";
+  }
   return (
     <div id="about" className="container">
       <h1>About me✏️</h1>
@@ -30,8 +43,8 @@ useEffect(() => {
         </p>
       </div>
       <div className="aboutTab">
-        <button className="tab"   onClick={aboutSection(event,'education')}>Education</button>
-        <button className="tab"  onClick={aboutSection(event,'achivements')}>achivements</button>
+        <button className="tab"   onClick={(e) => aboutSection(e, 'education')}>Education</button>
+        <button className="tab"  onClick={(e) => aboutSection(e, 'achivements')}>achivements</button>
       </div>
       <div id="education" className="tabContent">
         <Education />
