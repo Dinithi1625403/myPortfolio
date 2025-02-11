@@ -66,6 +66,12 @@ padding: 10px;
         opacity: 1;
     }
 }
+#education{
+    display: block;
+}
+#achivements{
+    display: none;
+}
 
 
 

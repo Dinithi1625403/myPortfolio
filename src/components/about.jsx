@@ -43,8 +43,8 @@ useEffect(() => {
         </p>
       </div>
       <div className="aboutTab">
-        <button className="tab"   onClick={(e) => aboutSection(e, 'education')}>Education</button>
-        <button className="tab"  onClick={(e) => aboutSection(e, 'achivements')}>achivements</button>
+        <button className="tab"id="edu"  onClick={(e) => aboutSection(e, 'education')}>Education</button>
+        <button className="tab" id="achive" onClick={(e) => aboutSection(e, 'achivements')}>achivements</button>
       </div>
       <div id="education" className="tabContent">
         <Education />
