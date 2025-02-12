@@ -1,3 +1,5 @@
+import './education.css';
+
 export default function Achivements(){
     return(
         <>
