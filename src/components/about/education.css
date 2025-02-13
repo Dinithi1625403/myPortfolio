@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    width: 100%;
    
     position: relative;
     background-color: rgb(122, 165, 202);
@@ -30,15 +30,18 @@
     width: fit-content;
     height: fit-content;
     border: 2px solid aqua;
+    
+    
 }
 
 .education-content.left {
-   float: left;
-    align-self: flex-start;
+    
+    align-self:start;
 }
 
 .education-content.right {
-    align-self: flex-end;
+    align-self: center;
+    background-color: blueviolet;
 }
 
 .education-title{
