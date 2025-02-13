@@ -1,26 +1,25 @@
 export default function Education(){
-    return(
+    const educationData = [
+        { title: "Rathnawali Balika Vidyalaya Gampaha", duration: "2013-2018" },
+        { title: "Rathnawali Balika Vidyalaya Gampaha", duration: "2018-2022" },
+        { title: "Aqainas College of Higher Studies", duration: "2022-2023" },
+        { title: "University of Moratuwa", duration: "2023-Present" }
+    ];
+
+    return (
         <>
-        <div className="education-container">
-            <div className="education-point">
-                <div className="education-frame">
-                    <h2 className="education-achedemy">Rathnawali Balika Vidyalaya Gampaha</h2>
-                    <p className="education-duration">2013-2018</p>
-                </div>
-                <div className="education-frame">
-                    <h2 className="education-achedemy">Rathnawali Balika Vidyalaya Gampaha</h2>
-                    <p className="education-duration">2018-2022</p>
-                </div>
-                <div className="education-frame">
-                    <h2 className="education-achedemy">Aqainas College of Higher Studies</h2>
-                    <p className="education-duration">2022-2023</p>
-                </div>
-                <div className="education-frame">
-                    <h2 className="education-achedemy">University of Moratuwa</h2>
-                    <p className="education-duration">2023-Present</p>
-                </div>
-            </div>    
-        </div>
+            <div className="education-container">
+                {educationData.map((item, index) => (
+                    <div key={index} className="education-item">
+                        <div className="education-point"></div>
+                        <div className="vertical-line"></div>
+                        <div className={`education-content ${index % 2 === 0 ? 'left' : 'right'}`}>
+                            <h2 className="education-title">{item.title}</h2>
+                            <p className="education-duration">{item.duration}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </>
     )
 }
