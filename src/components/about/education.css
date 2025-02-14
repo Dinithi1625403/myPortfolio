@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .education-item{ 
     display: flex;
@@ -12,7 +13,7 @@
     width: 100%;
    
     position: relative;
-    background-color: rgb(122, 165, 202);
+    
 }
 .education-point{
     width: 10px;
@@ -27,11 +28,14 @@
 .education-content{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 210px;
     height: fit-content;
-    border: 2px solid aqua;
+    border: 5px solid aqua;
     align-self: flex-end;
     align-items: flex-end;
+    padding: 10px;
+    border-radius: 25px;
+    
     
     
     
@@ -51,9 +55,13 @@
 
 .education-title{
     font-size: 0.8rem;
+    width: 100%;
 }
-.educcation-duration{
+.education-duration{
+    width: 100%;
     font-size: 0.6rem;
+    align-self: flex-start;
+    padding: 2px;
 }
 .vertical-line{
     width: 2px;

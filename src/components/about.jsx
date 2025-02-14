@@ -42,6 +42,7 @@ useEffect(() => {
           &nbsp;&nbsp;&nbsp;&nbsp;I’m a web developer who loves creating simple, user-friendly websites and applications. I’m currently studying for a BSc (Hons) in IT and always enjoy learning new skills, like React, to improve my work. I have a diploma in English Language and Literature, which helps me communicate and share ideas effectively. When I’m not coding, I spend time with my family and enjoy exploring new ways to grow and learn. I’m always excited to take on new challenges and create something meaningful. Let’s connect and make something great together!
         </p>
       </div>
+      <div className="sub-container">
       <div className="aboutTab">
         <button className="tab"id="edu"  onClick={(e) => aboutSection(e, 'education')}>Education</button>
         <button className="tab" id="achive" onClick={(e) => aboutSection(e, 'achivements')}>achivements</button>
@@ -51,6 +52,7 @@ useEffect(() => {
       </div>
       <div id="achivements" className="tabContent">
         <Achivements />
+      </div>
       </div>
     </div>
   );
