@@ -14,8 +14,11 @@ export default function Education(){
                         <div className="education-point"></div>
                         <div className="vertical-line"></div>
                         <div className={`education-content ${index % 2 === 0 ? 'left' : 'right'}`}>
-                            <h2 className="education-title">{item.title}</h2>
+                            
                             <p className="education-duration">{item.duration}</p>
+                            <div className="education-details">
+                            <h2 className="education-title">{item.title}</h2>
+                            </div>
                         </div>
                     </div>
                 ))}
