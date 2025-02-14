@@ -27,21 +27,26 @@
 .education-content{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 200px;
     height: fit-content;
     border: 2px solid aqua;
+    align-self: flex-end;
+    align-items: flex-end;
+    
+    
     
     
 }
 
 .education-content.left {
-    
-    align-self:start;
+    align-self: flex-start;
+    margin-left: 50px;
 }
 
 .education-content.right {
-    align-self: center;
-    
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 .education-title{
