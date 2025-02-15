@@ -21,7 +21,8 @@
     width: 10px;
     height: 10px;
     border-radius: 50rem;
-    background-color: aqua;
+    box-shadow: 0 0 10px #00FFFF;
+    background-color: #00FFFF;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
@@ -32,15 +33,7 @@
    
     
     height: 100px;
-    
-    
-    
-   
-    
-    
-    
-    
-    
+      
 }
 
 .education-content.left {
@@ -65,28 +58,30 @@
 .education-title{
     font-size: 0.8rem;
     width: 100%;
+    font-weight: lighter;
 }
 
 .education-duration{
     width: 100%;
     font-size: 0.6rem;
     
-    padding: 2px;
+    padding-bottom: 10px;
     
 
 }
 .vertical-line{
     width: 2px;
     height: 100%;
-    
-    background-color: aqua;
+    box-shadow: 0 0 10px #00FFFF;
+    background-color: #00FFFF;
     position: absolute;
     left: 50%;
-    top: -50%;
+    top: -40%;
     transform: translateX(-50%);
 }
 .education-details{
-    border: 5px solid aqua;
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 10px #00FFFF;
     display: flex;
     flex-direction: column;
     width: 210px;
