@@ -41,8 +41,16 @@
 }
 
 .education-content.left {
-    align-self: flex-start;
+    align-self: flex-end;
     margin-left: 50px;
+    .education-duration{
+        margin-left: auto;
+        margin-right: 0;
+        width: fit-content;
+       
+        
+    
+    }
 }
 
 .education-content.right {
@@ -59,8 +67,10 @@
 .education-duration{
     width: 100%;
     font-size: 0.6rem;
-    align-self: flex-start;
+    
     padding: 2px;
+    
+
 }
 .vertical-line{
     width: 2px;
