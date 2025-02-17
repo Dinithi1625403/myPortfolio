@@ -1,3 +1,4 @@
+import "./education.css";
 export default function Education(){
     const educationData = [
         { title: "Rathnawali Balika Vidyalaya Gampaha", duration: "2013-2018" },

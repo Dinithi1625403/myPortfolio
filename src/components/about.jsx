@@ -48,10 +48,12 @@ useEffect(() => {
         <button className="tab" id="achive" onClick={(e) => aboutSection(e, 'achivements')}>achivements</button>
       </div>
       <div id="education" className="tabContent">
-        <Education />
+        
+        <Achivements />
       </div>
       <div id="achivements" className="tabContent">
-        <Achivements />
+        
+        <Education />
       </div>
       </div>
     </div>
