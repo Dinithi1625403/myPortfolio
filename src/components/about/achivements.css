@@ -10,6 +10,7 @@
     overflow-x: auto;
     max-height: 500px;
     padding-left:380px; /* Adjust the value as needed */
+    
 }
 .achivement-card{
 position: relative;
@@ -21,4 +22,18 @@ margin: 20px;
 flex-shrink: 0;
 
 
+}
+.achivement-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.achivement-description{
+    text-align: center;
+    color: lightgray;
+}
+.achivement-image{
+    position: relative;
+   max-width: 400px;
+   z-index: 0;
 }

@@ -10,7 +10,7 @@ export default function Achivements(){
             <div className="achivement-container">
                 {AchivementsData.map((item, index) => (
                     <div key={index} className="achivement-card">
-                        <h6 className="achivement-title">{item.title}</h6>
+                        <p className="achivement-title">{item.title}</p>
                         <p className="achivement-description">{item.description}</p>
                         <img src={item.image} alt={item.title} className="achivement-image" />
                     </div>
