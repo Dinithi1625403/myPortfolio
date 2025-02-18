@@ -5,16 +5,16 @@
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: mediumpurple;
+    
     margin-top: 100px;
     overflow-x: auto;
     max-height: 500px;
     padding-left:380px; /* Adjust the value as needed */
-    
+    overflow-y: hidden;
 }
 .achivement-card{
 position: relative;
-background-color: rgb(47, 47, 49);
+
 border-radius: 25px;
 padding: 20px;
 max-width: 400px;
@@ -33,7 +33,11 @@ flex-shrink: 0;
     color: lightgray;
 }
 .achivement-image{
-    position: relative;
-   max-width: 400px;
-   z-index: 0;
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
