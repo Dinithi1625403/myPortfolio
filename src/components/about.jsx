@@ -1,7 +1,7 @@
 import "./about.css";
 import { useEffect } from "react";
 import Education from "./about/education";
-import Achivements from "./about/achivements";
+import Achievements from "./about/achievements";
 
 function About() {
 useEffect(() => {
@@ -49,7 +49,7 @@ useEffect(() => {
       </div>
       <div id="education" className="tabContent">
         
-        <Achivements />
+        <Achievements />
       </div>
       <div id="achivements" className="tabContent">
         
