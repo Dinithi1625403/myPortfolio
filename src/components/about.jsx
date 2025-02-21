@@ -44,9 +44,10 @@ useEffect(() => {
       </div>
       <div className="sub-container">
       <div className="aboutTab">
-        <button className="tab"id="edu"  onClick={(e) => aboutSection(e, 'education')}>Education</button>
-        <button className="tab" id="achive" onClick={(e) => aboutSection(e, 'achivements')}>achivements</button>
+        <a className="tab"id="edu"  onClick={(e) => aboutSection(e, 'education')}>Education</a>
+        <a className="tab" id="achive" onClick={(e) => aboutSection(e, 'achivements')}>achivements</a>
       </div>
+      <hr></hr>
       <div id="education" className="tabContent">
         
         <Achievements />
