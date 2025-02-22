@@ -85,10 +85,16 @@ padding: 10px;
     padding: 20px;
     
 }
+
 .tab{
     background: transparent;
     padding: 10px;
     color: white;
+    width: 400px;
+    text-align: center;
+    
+    
+   
    
 }
 #edu:hover ~ #achive {
@@ -97,29 +103,47 @@ padding: 10px;
 #achive:hover ~ #edu {
     border-bottom: none;
 }
-.tab.active, .tab:active, .tab:focus {
-    border: 2px solid;
+
+
+.tab.active{
+    
     color: white;
     padding: 10px;
-    border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
+    
     border-top: none;
     border-left: none;
     border-right: none;
+    background: linear-gradient(to right, #00FFFF, #B200FF);
+    border-bottom: 2px solid transparent;
+} 
+.tab:focus {
+    
+    color: white;
+    padding: 10px;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: linear-gradient(to right, #00FFFF, #B200FF);
+    border-bottom: 2px solid transparent;
 }
 
-.tab:hover {
-    border-bottom: 2px solid;
-    border-image: linear-gradient(to right, #00FFFF, #B200FF) 1;
-}
+
 
 .tab:not(:hover) {
     border-bottom: none;
 }
 
-hr{
-    border: 1px solid white;
+.tabHr{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 0px;
-    
+    top: -20px;
+    background: linear-gradient(to right, #00FFFF, #b200ff);
+    height: 2px;
+    border: none;
+  
 }
 
 

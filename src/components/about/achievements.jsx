@@ -3,7 +3,7 @@ import './achievements.css';
 export default function Achievements(){
     const AchievementsData = [
         {title:"Semifinalist of hack X 9.0 2024",description:"HackX is a Ideathon organized by Faculty of Science,University of Kaleniya.",image:"https://i.ibb.co/FqgWZ7ps/hackX.jpg"},
-        {title:"Finalist of InspiHER",description:"InspiHER is a Hackathon organized by IEEE WIE AG IEEE SL Section.",image:"https://i.ibb.co/7zvJYJ1/hack-X-9-0.png"},
+        {title:"Finalist of InspiHER",description:"InspiHER is a Hackathon organized by IEEE WIE AG IEEE SL Section.",image:"https://i.ibb.co/zT0csVfj/InspiHer.jpg"},
         
     ];
     return(

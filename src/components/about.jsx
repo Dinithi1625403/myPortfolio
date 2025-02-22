@@ -21,7 +21,7 @@ useEffect(() => {
     window.removeEventListener('scroll', handleScroll);
   };
 }, []);
-  function aboutSection(event,tabName) {
+  function aboutSection(event, tabName) {
     var i, tabContent, tab;
     tabContent = document.getElementsByClassName("tabContent");
     for (i = 0; i < tabContent.length; i++) {
@@ -34,6 +34,10 @@ useEffect(() => {
     document.getElementById(tabName).style.display = "block";
     event.currentTarget.className += " active";
   }
+
+  useEffect(() => {
+    document.getElementById("edu").click();
+  }, []);
   return (
     <div id="about" className="container">
       <h1>About me✏️</h1>
@@ -47,7 +51,7 @@ useEffect(() => {
         <a className="tab"id="edu"  onClick={(e) => aboutSection(e, 'education')}>Education</a>
         <a className="tab" id="achive" onClick={(e) => aboutSection(e, 'achivements')}>achivements</a>
       </div>
-      <hr></hr>
+      <hr className="tabHr"></hr>
       <div id="education" className="tabContent">
         
         <Achievements />
