@@ -52,6 +52,14 @@ padding: 10px;
         float: left;
         margin: 20px;
     }
+    .sub-container{
+        float: right;
+        width: 50%;
+    
+    }
+    .container{
+       height: 800px;
+    }
     
 }
 
@@ -73,8 +81,11 @@ padding: 10px;
     display: none;
 }
 .sub-container{
-    
+    margin-left: 20px;
+    margin-right: 20px;
     height: 550px;
+    max-width: 500px;
+    
     
     
 }
@@ -90,7 +101,7 @@ padding: 10px;
     background: transparent;
     padding: 10px;
     color: white;
-    width: 400px;
+    width: 300px;
     text-align: center;
     
     
