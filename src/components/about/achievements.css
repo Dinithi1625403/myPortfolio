@@ -5,15 +5,15 @@
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     height: fit-content;
     overflow-x: auto;
     max-height: 500px;
-    padding-left: 380px; /* Adjust the value as needed */
+    padding-left: 320px; /* Adjust the value as needed */
     overflow-y: hidden;
     /* Custom scrollbar styles */
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(0, 255, 255) rgb(178, 0, 255, 0.2);
+   
 }
 
 .achievement-container::-webkit-scrollbar {
@@ -22,24 +22,27 @@
 }
 
 .achievement-container::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 255, 255);
+    background:linear-gradient(to right, rgb(0, 255, 255), rgb(178, 0, 255)) ;
     border-radius: 25px;
+    
+    
 }
 
 .achievement-container::-webkit-scrollbar-track {
-    background-color: rgb(178, 0, 255, 0.2);
+    
     border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
 }
 
 .achievement-card {
     position: relative;
     border-radius: 25px;
     padding: 20px;
-    max-width: 400px;
-    margin: auto;
+    max-width: 320px;
+    
     margin-left: 20px;
     margin-bottom: 20px;
-    margin-top: 0px;
+    
     flex-shrink: 0;
     /* From https://css.glass */
     background: linear-gradient(to right, rgb(0, 255, 255,0.2), rgb(178, 0, 255,0.2));
@@ -51,10 +54,11 @@
 }
 
 .achievement-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: 700;
     color: white;
+    padding: 6px;
 }
 
 .achievement-description {
@@ -66,7 +70,7 @@
 }
 
 .achievement-image {
-    max-width: 360px;
+    max-width: 280px;
     object-fit: cover;
     background-size: cover;
     border-radius: 10px;

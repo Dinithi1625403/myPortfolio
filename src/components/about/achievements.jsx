@@ -13,8 +13,9 @@ export default function Achievements(){
                     
                     <div key={index} className="achievement-card">
                         <p className="achievement-title">{item.title}</p>
-                        <p className="achievement-description">{item.description}</p>
+                        
                         <img src={item.image} alt={item.title} className="achievement-image" />
+                        <p className="achievement-description">{item.description}</p>
                     </div>
                 ))}
             </div>
