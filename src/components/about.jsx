@@ -53,12 +53,12 @@ useEffect(() => {
       </div>
       <hr className="tabHr"></hr>
       <div id="education" className="tabContent">
+      <Education />
         
-        <Achievements />
       </div>
       <div id="achivements" className="tabContent">
+      <Achievements />
         
-        <Education />
       </div>
       </div>
     </div>
