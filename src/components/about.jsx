@@ -3,24 +3,24 @@ import { useEffect } from "react";
 import Education from "./about/education";
 import Achievements from "./about/achievements";
 
-function About() {
-useEffect(() => {
-  const handleScroll = () => {
-    var aboutSection = document.querySelector('.container');
-    var position = aboutSection.getBoundingClientRect();
+export default function About() {
+  useEffect(() => {
+    const handleScroll = () => {
+      var aboutSection = document.querySelector('.container');
+      var position = aboutSection.getBoundingClientRect();
 
-    // Checking if the element is in the viewport
-    if (position.top < window.innerHeight && position.bottom >= 0) {
-      aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
-    
-    }
-  };
+      // Checking if the element is in the viewport
+      if (position.top < window.innerHeight && position.bottom >= 0) {
+        aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
+      }
+    };
 
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   function aboutSection(event, tabName) {
     var i, tabContent, tab;
     tabContent = document.getElementsByClassName("tabContent");
@@ -35,10 +35,10 @@ useEffect(() => {
     event.currentTarget.className += " active";
   }
 
-  useEffect(() => {
-    document.getElementById("edu").click();
-  }, []);
+
+
   return (
+    <>
     <div id="about" className="container">
       <h1>About me✏️</h1>
       <div className="about">
@@ -47,23 +47,19 @@ useEffect(() => {
         </p>
       </div>
       <div className="sub-container">
-      <div className="aboutTab">
-        <a className="tab"id="edu"  onClick={(e) => aboutSection(e, 'education')}>Education</a>
-        <a className="tab" id="achive" onClick={(e) => aboutSection(e, 'achivements')}>achivements</a>
+        <div className="aboutTab">
+          <button className="tab" id="edu" onClick={(e) => aboutSection(e, 'education')}>Education</button>
+          <button className="tab" id="achive" onClick={(e) => aboutSection(e, 'achievements')}>Achievements</button>
+        </div>
+        <hr />
+        <div id="education" className="tabContent">
+          <Education />
+        </div>
+        <div id="achievements" className="tabContent">
+          <Achievements />
+        </div>
       </div>
-      <hr className="tabHr"></hr>
-      <div id="education" className="tabContent">
-      <Education />
-        
       </div>
-      <div id="achivements" className="tabContent">
-      <Achievements />
-        
-      </div>
-      </div>
-    </div>
+    </>
   );
-  
-
 }
-export default About;
