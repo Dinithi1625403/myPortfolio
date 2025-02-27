@@ -35,7 +35,13 @@ export default function About() {
     event.currentTarget.className += " active";
   }
 
-
+  useEffect(() => {
+    document.getElementById('education').style.display = 'block';
+    document.getElementById('edu').className = document.getElementById('edu').className.replace(' active', '');
+    document.getElementById('achive').className = document.getElementById('achive').className.replace(' active', '');
+    document.getElementById('edu').className += ' active';
+    document.getElementById('achievements').style.display = 'none';
+  }, []);
 
   return (
     <>
