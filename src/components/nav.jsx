@@ -5,13 +5,16 @@ export default function Nav(){
     const handlescroll=(id)=>{
         document.getElementById(id).scrollIntoView({behavior:"smooth"});
     }
-    document.addEventListener('click', function(event) {
-        var isClickInside = document.getElementById('navUl').contains(event.target) || document.getElementById('navIcon').contains(event.target);
-        if (!isClickInside) {
-            document.getElementById('navUl').style.display = 'none';
-            document.getElementById('navIcon').style.display = 'block';
-        }
-    });
+    if (window.innerWidth <= 768) {
+        document.addEventListener('click', function(event) {
+            var isClickInside = document.getElementById('navUl').contains(event.target) || document.getElementById('navIcon').contains(event.target);
+            if (!isClickInside) {
+                document.getElementById('navUl').style.display = 'none';
+                document.getElementById('navIcon').style.display = 'block';
+            }
+        });
+    }
+   
     function myFunction() {
         var z = document.getElementById("navIcon");
         var y = document.getElementsByClassName("navLi");
