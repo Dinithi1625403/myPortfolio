@@ -48,8 +48,8 @@ export default function About() {
       </div>
       <div className="sub-container">
         <div className="aboutTab">
-          <button className="tab" id="edu" onClick={(e) => aboutSection(e, 'education')}>Education</button>
-          <button className="tab" id="achive" onClick={(e) => aboutSection(e, 'achievements')}>Achievements</button>
+          <a className="tab" id="edu" onClick={(e) => aboutSection(e, 'education')}>Education</a>
+          <a className="tab" id="achive" onClick={(e) => aboutSection(e, 'achievements')}>Achievements</a>
         </div>
         <hr />
         <div id="education" className="tabContent">
