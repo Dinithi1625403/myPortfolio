@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './intro.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import myImage from './my.png';
 const texts = ["Developer", "Designer", "Creator", "Innovator"];
-
 export default function Intro() {
     const [index, setIndex] = useState(0);
 
@@ -34,8 +34,11 @@ export default function Intro() {
             </div>
             </div>
             <div className='introImg'>
-                <div className='circle'></div>
+                <div className='circle'>
+                    <img  className="myImg" src={myImage} alt='Dinithi Dewmini' />
+                </div>
             </div>
-        </div>
+            </div>
+        
     );
 }
