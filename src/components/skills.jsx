@@ -5,11 +5,19 @@ function SkillsP(props) {
     const handleScroll = () => {
       var aboutSection = document.querySelector('.skills');
       var position = aboutSection.getBoundingClientRect();
-  
+    
       // Checking if the element is in the viewport
       if (position.top < window.innerHeight && position.bottom >= 0) {
-        aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
+      aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
       }
+
+      var skillCards = document.querySelectorAll('.card');
+      skillCards.forEach((card) => {
+      var cardPosition = card.getBoundingClientRect();
+      if (cardPosition.top < window.innerHeight && cardPosition.bottom >= 0) {
+        card.style.animation = 'fadeIn 2s ease-out forwards';
+      }
+      });
     };
   
     window.addEventListener('scroll', handleScroll);
