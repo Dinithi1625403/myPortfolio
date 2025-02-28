@@ -21,7 +21,7 @@ body{
   font-weight: 300;
   font-style: normal;
   cursor: default;
-background-image: url('./components/galaxy.png');
+background-image: url('https://img.freepik.com/free-vector/watercolor-galaxy-background-with-stars_23-2149247760.jpg?t=st=1740753477~exp=1740757077~hmac=0a9f4737a8fa99e582be683eec09077a8c1aa5a142789ce0123fa3fffba0db6b&w=1800');
 width: 100vw;
 height: 100vh;
 background-size: cover;
