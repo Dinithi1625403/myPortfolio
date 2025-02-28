@@ -6,13 +6,15 @@ import Achievements from "./about/achievements";
 export default function About() {
   useEffect(() => {
     const handleScroll = () => {
-      var aboutSection = document.querySelector('.container');
-      var position = aboutSection.getBoundingClientRect();
+      var aboutSectionElements = document.querySelectorAll('.container, .about, .sub-container, .aboutTab, .tabContent');
+      aboutSectionElements.forEach(element => {
+      var position = element.getBoundingClientRect();
 
       // Checking if the element is in the viewport
       if (position.top < window.innerHeight && position.bottom >= 0) {
-        aboutSection.style.animation = 'fadeIn 2s ease-out forwards';
+        element.style.animation = 'fadeIn 2s ease-out forwards';
       }
+      });
     };
 
     window.addEventListener('scroll', handleScroll);
