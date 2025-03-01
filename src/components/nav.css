@@ -41,7 +41,7 @@ ul{
    -webkit-text-fill-color: transparent;
    font-size: 200%;
    display: inline;
-   
+   padding: 0cap;
   
  }
  .navName2{
@@ -49,7 +49,7 @@ ul{
     color: aliceblue;
     font-size: 180%;
     margin-left: 0;
-    
+    padding: 0cap;
     display: inline-table;
     
  }

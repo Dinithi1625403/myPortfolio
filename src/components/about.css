@@ -19,23 +19,26 @@
 }
 
 .description{
-    
     margin: 1cap;
-    font-size: small;
-    font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  height: fit-content;
-line-height: 1.6;
-text-align: justify;
-padding: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    height: fit-content;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
+}
+
+
 
     
 
 
 
-}
+
 
 
 .about{

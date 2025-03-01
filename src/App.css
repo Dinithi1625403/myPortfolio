@@ -21,11 +21,11 @@ body{
   font-weight: 300;
   font-style: normal;
   cursor: default;
-background-image: url('https://img.freepik.com/free-vector/watercolor-galaxy-background_23-2149247761.jpg?t=st=1740822123~exp=1740825723~hmac=2ad5e1330d21ea509c7386ab473a8e42f71d6c7c336f9368d14cea9454ab496a&w=1800');
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-vector/watercolor-galaxy-background_23-2149247761.jpg?t=st=1740822123~exp=1740825723~hmac=2ad5e1330d21ea509c7386ab473a8e42f71d6c7c336f9368d14cea9454ab496a&w=1800');
 width: 100vw;
 height: 100vh;
 background-size: cover;
-
+background-color: rgba(0, 0, 0, 0.5);
 
 
 
@@ -60,6 +60,7 @@ background-size: cover;
 }
 p{
     font-size: small;
+    font-family: 'Open Sans', sans-serif;
     
 }
 h1{
@@ -67,6 +68,7 @@ h1{
     width: fit-content;
     text-align: center;
     font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
     
     margin: auto;
     padding: 60px;
@@ -88,6 +90,8 @@ h1{
     opacity: 1;
 }
 h2{
+    font-family: 'Open Sans', sans-serif;
+    
     display: inline;
     color:aliceblue;
     text-align: left;
@@ -98,6 +102,8 @@ h2{
     
 }
 h3{
+    font-family: 'Open Sans', sans-serif;
+    
     animation: bottomToTop 2s ease-in-out infinite ;
     background: linear-gradient(to right, #00FFFF, #B200FF);
         -webkit-background-clip: text;
@@ -108,14 +114,24 @@ h3{
     
     }
 h4{
+    font-family: 'Open Sans', sans-serif;
         color: white;
         font-size: 1em;
         text-align: center;
         margin-bottom: 1px;
     }
     p{
-        color: white;
-        font-size: 1.6em;
+       margin: 1cap;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.5px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    height: fit-content;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
         
     }
 hr{
@@ -160,5 +176,12 @@ hr{
     }
 }
 
-
+h5{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+h6{
+    font-family: 'Open Sans', sans-serif;
+    
+}
   
