@@ -10,7 +10,7 @@ export default function Nav(){
             var isClickInside = document.getElementById('navUl').contains(event.target) || document.getElementById('navIcon').contains(event.target);
             if (!isClickInside) {
                 document.getElementById('navUl').style.display = 'none';
-                document.getElementById('navIcon').style.display = 'block';
+               
             }
         });
     }
