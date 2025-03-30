@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xpwpjypb");
-  if (state.succeeded) {
+  const successMessageShown = useRef(false);
+
+  if (state.succeeded && !successMessageShown.current) {
       alert("We will get back to you as soon as possible. Thank you for reaching out!");
-      
+      successMessageShown.current = true;
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
   }
   return (
     <div className='contact-form'>
