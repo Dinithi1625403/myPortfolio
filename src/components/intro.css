@@ -24,7 +24,7 @@ p{
 .intro-container{
   margin: auto;
   margin-top: 60px;
-  width: 80%;
+  width: 90%;
   
   
 }
@@ -50,13 +50,17 @@ p{
   .btn, .viewMore {
     padding: 10px 20px;
     font-size: 16px;
-    
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
-    
-   
+  }
+
+  @media screen and (max-width: 600px) {
+    .btn, .viewMore {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
   }
 
   /* Initial styles for .btn (colorized) */
@@ -221,8 +225,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px 5px rgba(0, 255, 255, 0.5), 0
     
   }
   .intro{
-     width:70%;
-     margin: 10%;
+     width:80%;
+     
      
      
   }
