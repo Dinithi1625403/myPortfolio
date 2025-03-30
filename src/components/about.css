@@ -92,6 +92,10 @@
     
     
 }
+.tabContent{
+   position: relative;
+    
+}
 .aboutTab{
     display: flex;
     justify-content: space-around;
