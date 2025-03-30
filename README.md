@@ -31,7 +31,7 @@ Here are some screenshots of the website:
 ## Demo
 
 You can view the live demo of the website here:  
-[**Portfolio Demo**](https://your-portfolio-demo-link.com)
+[**Portfolio Demo**](https://dinithi1625403.github.io/myPortfolio/index.html)
 
 ## Setup Instructions
 
@@ -42,4 +42,4 @@ To run this project locally, follow these steps:
 Open your terminal and run the following command to clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/portfolio-website.git
+git clone https://github.com/dinithi1625403/myPortfolio.git
