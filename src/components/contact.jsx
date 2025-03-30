@@ -1,5 +1,6 @@
 import "./contact.css";
 import { useEffect } from "react";
+import ContactForm from "./contactForm";
 export default function Contact() {
   useEffect(() => {
     const handleScroll = () => {
@@ -28,14 +29,7 @@ export default function Contact() {
       
       </div>
     
-    <div className="contact-form">
-        <form>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Message"></textarea>
-            <button className="send">Send </button>
-        </form>
-    </div>
+    <ContactForm />
     </div>
     </>
   );
