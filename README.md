@@ -21,10 +21,10 @@ This is my personal portfolio website built using **React.js**. It showcases my 
 Here are some screenshots of the website:
 
 ### Desktop View
-![Desktop View](./screenshots1.png)
-![Desktop View](./screenshots2.png)
-![Desktop View](./screenshots3.png)
-![Desktop View](./screenshots4.png)
+![Desktop View](./components/screenshot1.png)
+![Desktop View](./components/screenshot2.png)
+![Desktop View](./components/screenshot3.png)
+![Desktop View](./components/screenshot4.png)
 
 
 
